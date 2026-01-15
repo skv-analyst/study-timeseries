@@ -1,0 +1,25 @@
+[project]
+name = "study-timeseries"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "skv.analyst", email = "skv.analyst@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/study_timeseries"]
+
+
